@@ -32,10 +32,11 @@ export function BlogListItem(props: postsData) {
                     <div className='blogListItemIconContainer'>
                         <div className={`blogListItemIcon ${activeLike ? 'active' : ''}`}
                             onClick={() => {
-                                setLike(like + 1)
                                 if (activeLike) {
                                     setActiveLike(0)
+                                    setLike(like - 1)
                                 } else {
+                                    setLike(like + 1)
                                     setActiveLike(1)
                                     setActiveDislike(0)
                                 }
@@ -47,10 +48,11 @@ export function BlogListItem(props: postsData) {
                         </div>
                         <div className={`blogListItemIcon ${activeDislike ? 'active' : ''}`}
                             onClick={() => {
-                                setDislike(dislike + 1)
                                 if (activeDislike) {
                                     setActiveDislike(0)
+                                    setDislike(dislike - 1)
                                 } else {
+                                    setDislike(dislike + 1)
                                     setActiveDislike(1)
                                     setActiveLike(0)
                                 }

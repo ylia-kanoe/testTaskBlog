@@ -37,11 +37,12 @@ export function Post(props: propsType) {
                         <div className="postItemIconContainer">
                             <div className={`postItemIcon ${activeLike ? 'active' : ''}`}
                                 onClick={() => {
-                                    setLike(+like + 1)
                                     if (activeLike) {
                                         setActiveLike(0)
+                                        setLike(+like - 1)
                                     } else {
                                         setActiveLike(1)
+                                        setLike(+like + 1)
                                         setActiveDislike(0)
                                     }
                                 }}>
@@ -53,11 +54,12 @@ export function Post(props: propsType) {
                             <div className={`postItemIcon ${activeDislike ? 'active' : ''}`}
                                 onClick={() => {
                                     if (+dislike > 0) {
-                                        setDislike(+dislike + 1)
                                         if (activeDislike) {
                                             setActiveDislike(0)
+                                            setDislike(+dislike - 1)
                                         } else {
                                             setActiveDislike(1)
+                                            setDislike(+dislike + 1)
                                             setActiveLike(0)
                                         }
                                     }
