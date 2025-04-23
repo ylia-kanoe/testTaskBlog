@@ -1,0 +1,127 @@
+.blogListItem a {
+    color: #000;
+    padding: 11px 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.blogListItemImage {
+    width: 558px;
+    height: 273px;
+    overflow: hidden;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.blogListItem .blogListItemImage img {
+    width: 100%;
+    transform: translateY(-13%);
+}
+
+.blogListItemContainer {
+    padding: 24px 16px;
+}
+
+.blogListItemText {
+    display: none;
+}
+
+.blogListItem {
+    border: 1px solid rgba(244, 244, 244, 1);
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+    ;
+}
+
+.blogListItemTitle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    width: 100%;
+}
+
+.blogListItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 135px;
+    align-content: space-between;
+}
+
+.blogListItemIcon {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+}
+
+.blogListItemIcon:first-child:hover path,
+.blogListItemIcon.active:first-child path {
+    cursor: pointer;
+    fill: green;
+}
+
+.blogListItemIcon:last-child:hover path,
+.blogListItemIcon.active:last-child path {
+    cursor: pointer;
+    fill: red;
+}
+
+.blogListItemIconContainer {
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.blogListItemButton {
+    width: 150px;
+    border-radius: 60px;
+    padding: 0;
+    border: 2px solid #000;
+    background: transparent;
+}
+
+
+.blogListItem:first-child {
+    grid-column: span 2;
+
+}
+
+.blogListItem:first-child .blogListItemContainer {
+    height: auto;
+}
+
+.blogListItem:first-child .blogListItemIconContainer {
+    align-self: baseline;
+}
+
+
+.blogListItem:first-child .blogListItemImage {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.blogListItem:first-child .blogListItemImage img {
+    width: 100%;
+    transform: translateY(-11%);
+}
+
+.blogListItem:first-child .blogListItemText {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    display: block;
+    margin: 32px 0;
+}
+
+.blogListItem:first-child .blogListItemTitle {
+    width: auto;
+    max-width: 950px;
+}
+
+.blogListItem:first-child .blogListItemButton {
+    margin-left: auto;
+}

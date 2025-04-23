@@ -1,0 +1,71 @@
+.postItem {
+    padding: 80px 0;
+}
+
+.postItemText {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 43px;
+    letter-spacing: 0.4px;
+}
+
+.postItemTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    margin: 47px 0 0;
+}
+
+.postItemContainer {
+    width: 848px;
+    margin: 48px auto 80px;
+}
+
+.postItemImage img {
+    width: 100%;
+}
+
+.postItemTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postItemIconContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.postItemIcon {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+}
+
+.postItemIcon:first-child:hover path,
+.postItemIcon.active:first-child path {
+    cursor: pointer;
+    fill: green;
+}
+
+.postItemIcon:last-child:hover path,
+.postItemIcon.active:last-child path {
+    cursor: pointer;
+    fill: red;
+}
+
+.postItemLinkBack a {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.postItemLinkBack svg {
+    margin-right: 8px;
+    vertical-align: middle;
+}
